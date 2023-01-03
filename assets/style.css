@@ -1,0 +1,881 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.header-div{
+    height: 100vh;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+.header-div .title-header{
+    display: none;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    font-size: 18px;
+    align-items: center;
+    z-index: 1000;
+}
+.header-div .title-header .title{
+    color: white;
+    margin-left: 60px;
+    display: flex;
+    font-size: 25px;
+}
+.header-div .title-header .selector {
+    color: white;
+    display: flex;
+}
+.header-div .title-header .selector li{
+    margin-left: 25px;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.header-div .title-header .button-shop{
+    color: white;
+    display: flex;
+    margin-right: 40px;
+}
+.header-div .title-header .button-shop button{
+    width: 157px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #7d1eff;
+    font-weight: 900;
+    color: white;
+}
+.header-div .title-header .button-shop i{
+    margin-right: 35px;
+    position: relative;
+    left: 8px;
+    top: 9px;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.header-div .title-header .button-shop i::after{
+   content: '0';
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    background-color: #7d1eff;
+    color: white;
+    position: absolute;
+    top: -10px;
+    
+}
+.header-div .title-header .selector li a{
+    text-decoration: none;
+    color: white;
+}
+.header-div .image{
+    width: 50%;
+    height: 50%;
+    flex-wrap: wrap;
+}
+.header-div .image .big-image {
+    width: 1300px;
+    height: 1300px;
+    background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-4.png);
+    background-size: contain;  
+   background-position: left bottom;
+    position: relative;
+    left: 880px;
+    top: 25px;
+}
+.header-div .image .small-image {
+    width: 400px;
+    height: 400px;
+    background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-3.png);
+    background-size: contain;  
+    position: relative;
+    bottom: 1550px;
+    right: 125px;
+}
+.header-div .image .watch-image {
+    width: 600px;
+    height: 600px;
+    background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Vector-Smart-Object-copy-3.png);
+    background-size: contain;  
+    background-repeat: no-repeat;
+    position: relative;
+    left: 970px;
+    bottom: 1750px;   
+}
+.header-div .title-text{
+    width: 38%;
+    height: 38%;
+    color: white;
+    position: relative;
+    bottom: 300px;
+    left: 270px;
+}
+.header-div .title-text .title .watch{
+        color: #a46497;
+}
+.header-div .title-text h1{
+   font-family: 'Poppins', sans-serif;
+    width: 90%;
+    font-size: 70px;
+}
+.header-div .title-text span{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 30px; 
+}
+.header-div .title-text p{
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+   color: gray;
+   line-height: 1.8;
+}
+main .second-section{
+    background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-22-2.jpg?id=599);
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    height: 140vh;
+    position: relative;
+    z-index: 2;
+}
+body .sticky{
+    width: 60px;
+    height: 300px;
+    position:fixed;
+    top: 155px;
+    border-radius: 5px;
+    right: 10px;
+    background-color: white;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-top: 10px;
+    box-shadow: 1px 1px 4px 1px rgb(218, 218, 218);
+
+}
+body .sticky .cycle{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50px;  
+    box-shadow: 1px 1px 4px 1px rgb(218, 218, 218);
+}
+body .sticky .cycle:hover{
+   background-color: purple; 
+   color: white;
+ }
+ body .sticky .cycle a i:hover{
+   color: white;
+ }
+body .sticky .cycle i{
+    padding: 16px;
+}
+body .sticky .icon {
+    width: 40px;
+    height: 40px;
+}
+body .sticky .icon a{
+    text-decoration: none;
+    color: gray;
+    font-size: 22px;
+}
+.second-section .title-text{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+.second-section .title-text .title-watch{
+ display: flex;
+ justify-content: center;
+ margin: 0 auto;
+ font-size: 30px;
+ font-weight: 900;
+ font-family: Arial, Helvetica, sans-serif;
+ margin-top: 20px;
+}
+.second-section .title-text .title-watch .new{
+    color: #7d1eff;
+}
+.second-section .title-text .title-watch .improved{
+    margin-left: 5px;
+    color: #7d1eff;
+}
+.second-section .title-text .title-watch .other{
+   margin-right: 50px;
+    width: 60%;
+    align-content: center;
+    line-height: 60px;
+}
+.second-section .title-text .about-watch span{
+   font-family: 'Poppins', sans-serif;
+    color: #aca3ba;
+    font-weight: 900;
+}
+.second-section .title-text .text-watch{
+   font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #3f3849;
+}
+.second-section .title-text .title-watch{
+   font-family: 'Poppins', sans-serif;
+
+}
+.second-section .image{
+    display: flex;
+    position: relative;
+    top: 270px;
+    justify-content: center;
+}
+.second-section .image .start img{
+     width: 374px;
+     height: 446px;
+}
+.second-section .image .center img{
+    width: 374px;
+    height: 446px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.second-section .image .end img{
+    width: 374px;
+    height: 446px;
+}
+ main .third-section{
+    height: 260vh;
+    background-color: white;
+    position: relative;
+    
+ }
+ .third-section .phone {
+    position: absolute;
+    top: 230px;
+    left: 250px;
+ }
+ .third-section .phone img{
+    width: 448px ;
+    height: 675px;
+ }
+ .third-section .title-text{
+    position: absolute;
+    right: 370px;
+    top: 230px;
+ }
+ .third-section .title-text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-top: 10px;
+ }
+ .third-section .title-text span{
+   font-family: 'Poppins', sans-serif;
+    color: #aca3ba;
+    line-height: 30px;
+ }
+ .third-section .icon-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 615px;
+    height: 710px;
+    left: 800px;
+    top: 230px;
+ }
+ .icon-text .first .title-text{
+    margin-top: 45px;
+    position:absolute;
+    top: 150px;
+    left: 40px;
+ }
+
+ .icon-text .first .title-text .title h3{
+   font-family: 'Poppins', sans-serif;
+    width: 394px;
+    height: 25px;
+    font-weight: 900;
+ }
+ .icon-text .first .title-text .text p{
+   font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    margin-top: 10px;
+    width: 394px;
+    height: 56px;
+    position: absolute;
+    font-size: 20px;
+    color: #8d8698;
+    line-height: 30px;
+ }
+ .icon-text .second .title-text{
+    margin-top: 45px;
+    position:absolute;
+    top: 280px;
+    left: 40px;
+ }
+ .icon-text .second .title-text .title h3{
+   font-family: 'Poppins', sans-serif;
+    width: 394px;
+    height: 25px;
+    font-weight: 900;
+
+ }
+ .icon-text .second .title-text .text p{
+   font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    margin-top: 10px;
+    width: 394px;
+    height: 56px;
+    position: absolute;
+    font-size: 20px;
+    color: #8d8698;
+    line-height: 30px;
+ }
+ .icon-text .third .title-text{
+    margin-top: 45px;
+    position:absolute;
+    top: 410px;
+    left: 40px;
+ }
+ .icon-text .third .title-text .title h3{
+   font-family: 'Poppins', sans-serif;
+    width: 394px;
+    height: 25px;
+    font-weight: 900;
+
+ }
+ .icon-text .third .title-text .text p{
+   font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    margin-top: 10px;
+    width: 394px;
+    height: 56px;
+    position: absolute;
+    font-size: 20px;
+    color: #8d8698;
+    line-height: 30px;
+ }
+ .icon-text div h3 i{
+   color: #7d1eff;
+   margin-right: 10px;
+ }
+ .third-section .img-second{
+    position: relative;
+    height:774px;
+    width: 585px;
+    top: 350px;
+    left: 780px;
+    text-align: center;
+}
+ .third-section .img-second image{
+    height:739px;
+    width: 447px;
+ }
+ .third-section .second-title-text{
+    position: relative;
+    left: 250px;
+    bottom: 410px;
+ }
+ .third-section .second-title-text .text-title .text{
+  color: #aca3ba;
+  font-size: 14px;
+  letter-spacing: 1px;
+ }
+ .third-section .second-title-text .text-title .title{
+    font-size: 48px;
+    line-height: 60px;
+    line-height: 60px;
+    font-weight: 900;
+    margin-top: 20px;
+   }
+ .third-section .second-title-text .content .first-content{
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 200px;
+ }
+ .third-section .second-title-text .content .second-content{
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 400px;
+
+ }
+ .third-section .second-title-text .content .third-content{
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 600px;
+ }
+ .third-section .second-title-text .content div p{
+   font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    color: #8d8698;
+ }
+ .third-section .second-title-text .content .first-content pre{
+   width: 120px;
+   height: 6px;
+   background-color: #7d1eff;
+   border-radius: 50px;
+ }
+ .third-section .second-title-text .content .first-content hr{
+   width: 420px;
+   color: grey;
+ }
+ .third-section .second-title-text .content .second-content pre{
+   width: 350px;
+   height: 6px;
+   background-color: #7d1eff;
+   border-radius: 50px;
+ }
+ .third-section .second-title-text .content .second-content hr{
+   width: 420px;
+   color: grey;
+ }
+ .third-section .second-title-text .content .third-content pre{
+   width: 240px;
+   height: 6px;
+   background-color: #7d1eff;
+   border-radius: 50px;
+ }
+ .third-section .second-title-text .content .third-content hr{
+   width: 420px;
+   color: grey;
+ }
+ .third-section .second-title-text .content div span{
+   font-family: 'Poppins', sans-serif;
+    position: relative;
+    left: 390px;
+    font-size: 16px;
+    font-weight: 900;
+ }
+ main .for{
+    background-image: url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Ellipse-974-copy-22-2.jpg?id=599);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 170vh;
+ }
+ .for .title-text{
+    width: 520px;
+    position: relative;
+    left: 300px;
+    top: 200px;
+ }
+ .for .title-text span{
+   font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 30px;
+    color: #aca3ba;
+    font-size: 15px;
+    font-weight: 700;
+ }
+ .for .title-text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+ }
+ .for .title-text .viol{
+    color: #7d1eff;
+ }
+ .for .title-text p{
+   font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 45px;
+ }
+ .for .img-icon .img img{
+    position: relative;
+    top: 190px;
+    left: 300px;
+ }
+ .for .img-icon .icon{
+    background-color: white;
+    color: gray;
+    position: relative;
+    top: 530px;
+    left: 775px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    z-index: 5;
+ }
+ .for .img-icon .icon:hover{
+   background-color: purple;
+   color: white;
+ }
+ .for .img-icon .icon i{
+    position: absolute;
+    left: 26px;
+    top: 22px;
+    font-weight: 900;
+ }
+ main .five{
+    background-color: #424242;
+    height: 130vh;
+ }
+ .five .title-text{
+    position: relative;
+    top: 120px;
+    text-align: center;
+ }
+ .five .title-text span{
+   font-family: 'Poppins', sans-serif;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #9b9b9b;
+ }
+ .five .title-text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+ }
+ .five .boxes .first-box{
+    background-image:url(https://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-8211-copy-2.jpg?id=600);
+    background-position: center;
+    background-size: cover;
+    width:425px;
+    height:383px;
+ }
+ .five .boxes .first-box .text{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    color: white;
+ }
+ .five .boxes .first-box .text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #99ffee;
+    margin-top: 10px;
+ }
+ .five .boxes .first-box .text .price{
+   font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+ }
+ .five .boxes .second-box{
+    background-image:url(http://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-8211-copy-3.jpg?id=601);
+    background-position: center;
+    background-size: cover;
+    width:425px;
+    height:383px;
+    position: absolute;
+    left: 440px;
+ }
+ .five .boxes .second-box .text{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    color: white;
+ }
+ .five .boxes .second-box .text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #cea9ff;
+    margin-top: 10px;
+ }
+ .five .boxes .second-box .text .price{
+   font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+ } 
+ .five .boxes .third-box{
+    background-image:url(http://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Group-82111-copy-4.jpg?id=598);
+    background-position: center;
+    background-size: cover;
+    width:425px;
+    height:383px;
+    position: absolute;
+    left: 880px;
+
+ }
+ .five .boxes .third-box .text{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    color: white;
+ }
+ .five .boxes .third-box .text h1{
+   font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f3b560;
+    margin-top: 10px;
+ }
+ .five .boxes .third-box .text .price{
+   font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+ }
+ .five .boxes {
+    position: relative;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    left: 150px;
+ }
+
+ .five .button button{
+    width: 160px;
+    height: 56px;
+    border: 2px solid white;
+    border-radius:27px ;
+    position: relative;
+    left: 717px;
+    top: 300px;
+    background-color: #424242 ;
+    color: white;
+    font-weight: 900;
+ }
+ .five .button :hover{
+   color: rgb(212, 212, 212);
+ }
+ main .six{
+   background-color: #f4f4f4;
+   width: 100%;
+   height: 130vh;
+   background-image: url(http://jevelin.shufflehound.com/single-product/wp-content/uploads/sites/29/2018/03/Vector-Smart-Object-2copy-2.jpg?id=642);
+   background-position: left center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   position: absolute;
+ }
+ .six .title{
+   text-align: center;
+   padding-top: 120px;
+   font-size: 40px;
+   font-weight: 900;
+ }
+ .six .img-icon{
+    position: relative;
+    text-align: center;
+    width: 550px;
+    height: 335px;
+    margin: 0 auto;
+ }
+   .six .img-icon img{
+     width: 92px;
+     height: 92px;
+     border-radius: 50px;
+     position: absolute;
+     top: 80px;
+     left: 226px;
+ }
+ .six .img-icon .icon .icon-right i{
+   position: absolute;
+   font-size: 45px;
+   width: 29px;
+   height: 28px;
+   top: 110px;
+   right: 55px;
+   color: gray;
+ }
+ .six .img-icon .icon .icon-left i{
+   position: absolute;
+   font-size: 45px;
+   width: 29px;
+   height: 28px;
+   top: 110px;
+   left: 55px;
+   color: gray;
+ }
+ .six .img-icon .icon i:hover{
+   color: white;
+ }
+ .six .text{
+   font-family: 'Poppins', sans-serif;
+   width: 550px;
+   height: 112px;
+   text-align: center;
+   margin: 0 auto;
+ }
+ .six .text p{
+   font-family: 'Poppins', sans-serif;
+   margin-top: -110px;
+   font-size: 20px;
+   color: gray;
+
+ }
+ .six .text span{
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   margin-top: 25px;
+   display: block;
+ }
+ .six .text .ella{
+   color: #7d1eff;
+   font-weight: 900;
+ }
+ .six .text .number{
+   font-family: 'Poppins', sans-serif;
+   font-size:25px ;
+   color: gray;
+ }
+ .six .footer-icon{
+   background-color: #7d1eff;
+   width: 100%;
+   height: 155px;
+   position: absolute;
+   bottom: 10px;
+ }
+ .six .footer-icon .icon{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   top: 65px;
+ }
+ .six .footer-icon .icon div i{
+   font-size: 32px;
+   color: #bb89ff;
+   width: 20px;
+   height: 20px;
+   margin-left: 55px;
+ }
+ .six .footer-icon .icon div i:hover{
+   color: white;
+ }
+footer {
+ position: relative;
+ height: 60vh;
+ background-color: #333;
+ top: 985px;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ padding-left: 60px;
+ padding-top: 40px;
+ flex-wrap: wrap;
+}
+footer .first-section{
+   color: white;
+   width: 300px;
+   height: 242px;
+   text-align: start;
+}
+footer .first-section .icons{
+display: flex;
+}
+footer .first-section .icons div .icon{
+   margin-left: 15px;
+}
+footer .first-section .icons div i{
+   font-size: 22px;
+   margin-top: 40px;
+}
+footer .first-section .title p{
+   font-family: 'Poppins', sans-serif;
+   margin-top: 15px;
+   color: #a1a1a1;
+}
+footer .first-section .secure{
+   font-family: 'Poppins', sans-serif;
+   display: block;
+   margin-top: 15px;
+   font-size: 14px;
+   color: #a1a1a1;
+}
+footer .second-section{
+   color: white;
+   width: 200px;
+   height: 240px;
+   text-align: start;
+}
+footer .second-section .title{
+   font-family: 'Poppins', sans-serif;
+   font-size: 9px;
+   color: white;
+   margin-bottom: 15px;
+}
+footer .second-section ul a{
+   text-decoration: none;
+   color: #a1a1a1;
+}
+footer .second-section ul li{
+   font-family: 'Poppins', sans-serif;
+   list-style-type: none;
+   line-height: 30px;
+   font-size: 16px;
+}
+footer .second-section ul {
+   margin-bottom: 40px;
+}
+footer .third-section{
+   color: white;
+   width: 200px;
+   height: 240px;
+   text-align: start;
+}
+footer .third-section .title{
+   font-family: 'Poppins', sans-serif;
+   font-size: 9px;
+   color: white;
+   margin-bottom: 15px;
+}
+footer .third-section ul a{
+   text-decoration: none;
+   color: #a1a1a1;
+}
+footer .third-section ul li{
+   font-family: 'Poppins', sans-serif;
+   list-style-type: none;
+   line-height: 30px;
+   font-size: 16px;
+}
+footer .third-section ul {
+   margin-bottom: 40px;
+}
+footer .last-text p{
+ height: 28px;
+ width: 1000px;
+}
+footer .last-text{
+   position: relative;
+   top: 10px;
+   left: 320px;
+   color: #a1a1a1;
+}
+
+
+
+
+ 
+
+ 
+ 
